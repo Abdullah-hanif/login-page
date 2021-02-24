@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sylani form</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+
+function get_action(form) 
+{
+    var v = grecaptcha.getResponse();
+    if(v.length == 0)
+    {
+        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        return false;
+    }
+    else
+    {
+         document.getElementById('captcha').innerHTML="Captcha completed";
+        return true; 
+    }
+}
+
+</script>
+    <style>
+        img{ display: block;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        p.{
+
+  background-color: lightgrey;
+  width: 300px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+        
+    </style>
+</head>
+<body>
+    <img src="https://dmhqppb4umb6.cloudfront.net/saylani-logo.png" alt="sylani">
+    <h1 align="center" >Saylani Mass Training & Job Creation Program</h1>
+    <h2 align="center">  Registration / Entry Test Form</h2>
+    <a href=""> download your admit card</a>
+    <br> <br>
+    
+    <select  style="width: 500px;"> 
+        <option value="select course " >select course</option>
+        <option value="IT essential FSD">IT essential FSD</option>
+    
+    </select>
+    
+    <select style="width: 500px;"  >
+    <option value="6">6 </option>
+     
+</select>
+<br> <br>
+<p>YOUR NAME*</p>
+<input type='text' value='' maxlength="18" placeholder="NAME"  > <br>
+<br>
+<label for="Date of Birth*">Date of Birth*</label> <br> 
+<input type="date" >
+<br>
+<p>Gender* <br> 
+    <input type="radio" name="gender" value="male "  aria-multiselectable="true"> male
+    <input type="radio" name="gender" value="female" aria-multiselectable="true"> female
+</p>
+<p>CNIC/B-FORM* <BR> 
+<input type="text" placeholder="CNIC/B-FORM"> </p> 
+<p style="font-size: 12px;">e.g 42101590056702</p>
+<br>
+<p> FATHER NAME* <BR>
+    <input type="text" placeholder="Father name">
+</p>
+<br>
+<p> FATHER / GUARDIANS'S CNIC <br>
+    <input type="text" placeholder="input your guardian's CNIC">
+</p>
+<p style="font-size: 12px;">e.g 4210159863435</p>
+<br>
+<p> Full and permenant Adress* <br>
+    <input type="text" placeholder="Full And Permenent Adress">
+</p>
+<br>
+<p> Cell Number*  <br>
+    <input type="text" placeholder="Enter your mobile number ">
+</p>
+<p style="font-size: 12px;"> e.g 03052151002</p>
+<br>
+<p> Email* <br>
+       <input type="email" placeholder="enter your valid email">
+    </p>
+    <p style="font-size: 12px;">provide a valid accesable email adress that we will use to contact you  </p>
+    <br>
+    <p> Last Qualification* <br>
+<input type="radio" name="qualionificat" value="none" aria-multiselectable="false"> none
+<input type="radio" name="qulification" value="matric" aria-multiselectable="false"> matric
+<input type="radio" name="qualification" value="intermediate" aria-multiselectable="false"> intermediate    
+<input type="radio" name=" qulification" value="bachelors" aria-multiselectable="false"> bachelors
+<input type="radio" name="qualification" value="master" aria-multiselectable="false"> Master
+<input type="radio"  name="qualification" value="PHD"aria-multiselectable> PHD
+ </p>
+ <br>
+ <p >Upload your recent image (face front, without glasses and with a single-colored background) * <br> </p>
+<input type="file"> <br>
+<p style="font-size: 12px;">Only png or jpg with size < 1mb is allowed</p> <br>
+<p> Availibility * <br>
+    Drag and drop class timings mentioned below as per your availibility and priority.
+</p>
+<p> priority#1:- <br> MON,TUE,WED 
+    <p style="font-weight: bolder;">3pm to 5pm</p>
+<p>
+<br>
+<p>Declaration Undertaking *</p>
+<ul style="font-size: 20px;">
+    <ol>
+        <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by my all the establish and future regulation and policies of SWIT</li>
+        <li>I hereby accept the responsibilites of the good conduct and guarantee that I will not be involved in any other activity, polical or ethic, but learning during my stay in the program</li>
+        <li>Defiance will render my admission cancelled at any point in time.</li>
+        <li>Upon completion of course, I will complete the required project by SWIT.</li>
+    </ol>
+</ul>
+<input type="checkbox"> I agree with the above terms
+<br>
+
+    
+<form action="" method="post">
+    
+  
+    <br>
+  
+    <div class="form-row">
+      <div class="g-recaptcha" data-sitekey="__Site_key__"></div>
+    </div>
+  
+    <br>
+  
+    <input name="sendEmail" type="submit" value="submit">
+  
+    <br>
+  
+    <h4 id="response"></h4>
+    </form>
+  
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+
+
+</body>
+</html>

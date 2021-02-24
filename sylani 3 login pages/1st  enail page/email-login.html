@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover:not(.active) {
+            background-color: #111;
+          }
+          
+          .active {
+            background-color: #4CAF50;
+          }
+          </style>
+</head>
+
+<body>
+    <div style="width: 50%;margin-left: 300px;">
+        <ul>
+            <li><a class="active" href="./email-login.html">Step 1: Accounts</a></li>
+            <li><a href="./personal-details.html">Step 2: Personal Details</a></li>
+            <li><a href="../account-review.html">Step 3:  Review</a></li>
+        </ul>
+    </div>
+    <fieldset>
+        <legend align="center" >  
+
+            account
+
+        </legend>
+        <div align="center">
+        Email: <br>
+        <input type="email" name="email" value="" placeholder="email"> 
+    </div >
+    <div align="center">
+        Password: <br>
+        <input type="password" name="password" value="" placeholder="password"> 
+    </div>
+    <div align="center">
+        Confirm Password: <br>
+        <input type="confirm password" name="password" value="" placeholder="confirm password">
+    </div>
+    <a href="../1st  enail page/personal-details.html" style="margin-right: 6px;"><img src="../../next image.jpeg" alt="" width="10%" align="right" ></a>
+    </fieldset>
+    
+</body>
+</html>
